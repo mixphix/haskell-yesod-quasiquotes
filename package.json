@@ -25,13 +25,11 @@
   "categories": [
     "Programming Languages"
   ],
-  "activationEvents": [
-    "onLanguage:haskell"
-  ],
   "extensionDependencies": [
     "justusadam.language-haskell",
     "bigmoon.language-yesod"
   ],
+  "publisher": "mel-brown",
   "contributes": {
     "grammars": [
       {
