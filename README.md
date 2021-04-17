@@ -1,4 +1,4 @@
-# haskell-shakespeare-quasiquotes
+# haskell-yesod-quasiquotes
 
 Support for [Yesod](https://www.yesodweb.com/)'s Shakespeare template syntax highlighting inside Haskell source files.
 
