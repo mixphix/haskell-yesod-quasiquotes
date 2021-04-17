@@ -2,7 +2,7 @@
   "name": "haskell-yesod-quasiquotes",
   "displayName": "Haskell Yesod QuasiQuotes",
   "description": "Syntax highlighting for Yesod quasiquotes within Haskell files.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.55.0"
   },
@@ -33,7 +33,9 @@
   "contributes": {
     "grammars": [
       {
-        "injectTo": ["source.haskell"],
+        "injectTo": [
+          "source.haskell"
+        ],
         "scopeName": "inline.yesod.hamlet",
         "path": "./syntaxes/hamlet.tmLanguage.json",
         "embeddedLanguages": {
@@ -44,7 +46,9 @@
         }
       },
       {
-        "injectTo": ["source.haskell"],
+        "injectTo": [
+          "source.haskell"
+        ],
         "scopeName": "inline.yesod.julius",
         "path": "./syntaxes/julius.tmLanguage.json",
         "embeddedLanguages": {
@@ -52,7 +56,9 @@
         }
       },
       {
-        "injectTo": ["source.haskell"],
+        "injectTo": [
+          "source.haskell"
+        ],
         "scopeName": "inline.yesod.lucius",
         "path": "./syntaxes/lucius.tmLanguage.json",
         "embeddedLanguages": {
@@ -60,7 +66,9 @@
         }
       },
       {
-        "injectTo": ["source.haskell"],
+        "injectTo": [
+          "source.haskell"
+        ],
         "scopeName": "inline.yesod.models",
         "path": "./syntaxes/models.tmLanguage.json",
         "embeddedLanguages": {
