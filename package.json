@@ -1,0 +1,74 @@
+{
+  "name": "haskell-yesod-quasiquotes",
+  "displayName": "Haskell Yesod QuasiQuotes",
+  "description": "Syntax highlighting for Yesod quasiquotes within Haskell files.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "keywords": [
+    "language",
+    "haskell",
+    "yesod",
+    "highlight",
+    "syntax"
+  ],
+  "license": "BSD-3-Clause",
+  "homepage": "https://github.com/bi-functor/haskell-yesod-quasiquotes",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bi-functor/haskell-yesod-quasiquotes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bi-functor/haskell-yesod-quasiquotes/issues"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onLanguage:haskell"
+  ],
+  "extensionDependencies": [
+    "justusadam.language-haskell",
+    "bigmoon.language-yesod"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "injectTo": ["source.haskell"],
+        "scopeName": "inline.yesod.hamlet",
+        "path": "./syntaxes/hamlet.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.hamlet": "yesod.hamlet",
+          "meta.embedded.block.whamlet": "yesod.hamlet",
+          "meta.embedded.block.shamlet": "yesod.hamlet",
+          "meta.embedded.block.xhamlet": "yesod.hamlet"
+        }
+      },
+      {
+        "injectTo": ["source.haskell"],
+        "scopeName": "inline.yesod.julius",
+        "path": "./syntaxes/julius.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.julius": "yesod.julius"
+        }
+      },
+      {
+        "injectTo": ["source.haskell"],
+        "scopeName": "inline.yesod.lucius",
+        "path": "./syntaxes/lucius.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.lucius": "yesod.lucius"
+        }
+      },
+      {
+        "injectTo": ["source.haskell"],
+        "scopeName": "inline.yesod.models",
+        "path": "./syntaxes/models.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.models": "yesod.models"
+        }
+      }
+    ]
+  }
+}

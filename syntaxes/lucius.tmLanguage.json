@@ -1,0 +1,24 @@
+{
+  "fileTypes": ["hs"],
+  "injectionSelector": "L:source.haskell -comment -(string -meta.embedded)",
+  "patterns": [
+    {
+      "name": "meta.embedded.block.yesod.lucius",
+      "contentName": "meta.embedded.block.lucius",
+      "begin": "(?x)(\\[)(lucius)(\\|)",
+      "beginCaptures": {
+        "1": { "name": "keyword.operator.quasi-quotation.begin.haskell" },
+        "2": { "name": "entity.name.quasi-quoter.haskell" },
+        "3": { "name": "keyword.operator.quasi-quotation.begin.haskell" }
+      },
+      "end": "(\\|\\])",
+      "endCaptures": {
+        "0": { "name": "keyword.operator.quasi-quotation.end.haskell" }
+      },
+      "patterns": [
+        { "include": "source.yesod.lucius" }
+      ]
+    }
+  ],
+  "scopeName": "inline.yesod.lucius"
+}
