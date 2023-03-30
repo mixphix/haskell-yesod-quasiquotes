@@ -2,7 +2,7 @@
   "name": "haskell-yesod-quasiquotes",
   "displayName": "Haskell Yesod QuasiQuotes",
   "description": "Syntax highlighting for Yesod quasiquotes within Haskell files.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "engines": {
     "vscode": "^1.55.0"
   },
@@ -14,13 +14,13 @@
     "syntax"
   ],
   "license": "BSD-3-Clause",
-  "homepage": "https://github.com/bi-functor/haskell-yesod-quasiquotes",
+  "homepage": "https://github.com/mixphix/haskell-yesod-quasiquotes",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bi-functor/haskell-yesod-quasiquotes.git"
+    "url": "https://github.com/mixphix/haskell-yesod-quasiquotes.git"
   },
   "bugs": {
-    "url": "https://github.com/bi-functor/haskell-yesod-quasiquotes/issues"
+    "url": "https://github.com/mixphix/haskell-yesod-quasiquotes/issues"
   },
   "categories": [
     "Programming Languages"
@@ -53,6 +53,17 @@
         "path": "./syntaxes/julius.tmLanguage.json",
         "embeddedLanguages": {
           "meta.embedded.block.julius": "yesod.julius"
+        }
+      },
+      {
+        "injectTo": [
+          "source.haskell"
+        ],
+        "scopeName": "inline.haskell.text",
+        "path": "./syntaxes/text.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.text": "source.haskell.text",
+          "meta.embedded.block.text.bar": "source.haskell.text"
         }
       },
       {
