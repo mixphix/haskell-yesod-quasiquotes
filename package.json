@@ -14,13 +14,13 @@
     "syntax"
   ],
   "license": "BSD-3-Clause",
-  "homepage": "https://github.com/bi-functor/haskell-yesod-quasiquotes",
+  "homepage": "https://github.com/mixphix/haskell-yesod-quasiquotes",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bi-functor/haskell-yesod-quasiquotes.git"
+    "url": "https://github.com/mixphix/haskell-yesod-quasiquotes.git"
   },
   "bugs": {
-    "url": "https://github.com/bi-functor/haskell-yesod-quasiquotes/issues"
+    "url": "https://github.com/mixphix/haskell-yesod-quasiquotes/issues"
   },
   "categories": [
     "Programming Languages"
@@ -73,6 +73,16 @@
         "path": "./syntaxes/models.tmLanguage.json",
         "embeddedLanguages": {
           "meta.embedded.block.models": "yesod.models"
+        }
+      },
+      {
+        "injectTo": [
+          "source.haskell"
+        ],
+        "scopeName": "inline.yesod.text",
+        "path": "./syntaxes/text.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.text": "yesod.text"
         }
       }
     ]

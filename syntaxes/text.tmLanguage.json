@@ -1,0 +1,52 @@
+{
+  "fileTypes": ["hs"],
+  "injectionSelector": "L:source.haskell -comment -(string -meta.embedded)",
+  "patterns": [
+    {
+      "name": "meta.embedded.block.yesod.$1",
+      "contentName": "meta.embedded.block.$1",
+      "begin": "(?x)(\\[)(st|lt|stext|ltext|text|st|sbt|codegen)(\\|)",
+      "beginCaptures": {
+        "1": { "name": "keyword.operator.quasi-quotation.begin.haskell" },
+        "2": { "name": "entity.name.quasi-quoter.haskell" },
+        "3": { "name": "keyword.operator.quasi-quotation.begin.haskell" }
+      },
+      "end": "(\\|\\])",
+      "endCaptures": {
+        "0": { "name": "keyword.operator.quasi-quotation.end.haskell" }
+      },
+      "patterns": [
+        { "include": "source.yesod.$1" },
+        { "include": "#interpolation" }
+      ]
+    }
+  ],
+  "repository": {
+    "interpolation": {
+      "patterns": [
+        {
+          "begin": "([_@#^\\*]|@\\?)\\{",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.section.interpolation.begin.hamlet"
+            }
+          },
+          "contentName": "source.haskell.embedded",
+          "end": "(\\})",
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.section.interpolation.end.hamlet"
+            }
+          },
+          "name": "meta.interpolation.hamlet",
+          "patterns": [
+            {
+              "include": "source.haskell"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "scopeName": "inline.yesod.text"
+}
