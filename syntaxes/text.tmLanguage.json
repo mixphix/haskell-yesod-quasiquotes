@@ -5,7 +5,7 @@
     {
       "name": "meta.embedded.block.yesod.$1",
       "contentName": "meta.embedded.block.$1",
-      "begin": "(?x)(\\[)(st|lt|stext|ltext|text|st|sbt|codegen)(\\|)",
+      "begin": "(?x)(\\[)(st|lt|stext|ltext|text|sbt|lbt|codegen)(\\|)",
       "beginCaptures": {
         "1": { "name": "keyword.operator.quasi-quotation.begin.haskell" },
         "2": { "name": "entity.name.quasi-quoter.haskell" },
