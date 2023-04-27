@@ -2,7 +2,7 @@
   "name": "haskell-yesod-quasiquotes",
   "displayName": "Haskell Yesod QuasiQuotes",
   "description": "Syntax highlighting for Yesod quasiquotes within Haskell files.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "engines": {
     "vscode": "^1.55.0"
   },
